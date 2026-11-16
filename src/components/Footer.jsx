@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Instagram, Facebook, ArrowUpRight, Heart, Shield } from 'lucide-react';
+import { Linkedin, Instagram, Facebook, ArrowUpRight, Phone, Mail, MapPin } from 'lucide-react';
 import Logo from './Logo';
 import { COMPANY_INFO } from '../data/companyData';
 
@@ -59,34 +59,14 @@ export default function Footer({ onOpenLegal, onSelectService, onNavigate, curre
     <footer className="bg-[#030C19] border-t border-oryon-border/20 pt-16 pb-12 text-oryon-grey/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-14 border-b border-white/[0.08]">
-          {/* Column 1: Brand & Description (5 cols) */}
-          <div className="lg:col-span-5 space-y-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-white/[0.08]">
+          {/* Column 1: Brand & Description (4 cols) */}
+          <div className="lg:col-span-4 space-y-5">
             <Logo size="large" />
 
             <p className="text-sm text-oryon-grey/85 leading-relaxed max-w-sm pt-2">
               Building digital experiences through technology, creativity, and intelligent engineering.
             </p>
-
-            {/* Direct Contact Details */}
-            <div className="pt-2 space-y-1.5 text-xs text-oryon-grey/80">
-              <a
-                href={`mailto:${COMPANY_INFO.email}`}
-                className="flex items-center gap-2 hover:text-oryon-cyan transition-colors"
-              >
-                <span className="text-oryon-cyan">✉</span>
-                <span>{COMPANY_INFO.email}</span>
-              </a>
-              <a
-                href="https://wa.me/919658844199"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-emerald-400 transition-colors font-mono"
-              >
-                <span className="text-emerald-400">☎</span>
-                <span>{COMPANY_INFO.phone} (WhatsApp & Calls)</span>
-              </a>
-            </div>
 
             <div className="pt-2">
               <span className="text-xs font-mono uppercase tracking-wider text-oryon-cyan block mb-3">
@@ -125,8 +105,8 @@ export default function Footer({ onOpenLegal, onSelectService, onNavigate, curre
             </div>
           </div>
 
-          {/* Column 2: Quick Links (3 cols) */}
-          <div className="lg:col-span-3">
+          {/* Column 2: Quick Links (2 cols) */}
+          <div className="lg:col-span-2">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-5 font-heading">
               Quick Links
             </h4>
@@ -146,8 +126,8 @@ export default function Footer({ onOpenLegal, onSelectService, onNavigate, curre
             </ul>
           </div>
 
-          {/* Column 3: Services (4 cols) */}
-          <div className="lg:col-span-4">
+          {/* Column 3: Services (3 cols) */}
+          <div className="lg:col-span-3">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-5 font-heading">
               Services
             </h4>
@@ -169,6 +149,59 @@ export default function Footer({ onOpenLegal, onSelectService, onNavigate, curre
                   </button>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Column 4: Contact Details (3 cols) */}
+          <div className="lg:col-span-3">
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-5 font-heading">
+              Contact Us
+            </h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <div className="p-2 rounded-lg bg-oryon-surface border border-oryon-border/30 text-oryon-cyan shrink-0 mt-0.5">
+                  <Phone className="w-4 h-4" />
+                </div>
+                <div>
+                  <span className="text-xs font-mono text-oryon-grey/60 uppercase block">Phone / WhatsApp</span>
+                  <a
+                    href="https://wa.me/919658844199"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-white hover:text-emerald-400 transition-colors font-mono block mt-0.5"
+                  >
+                    {COMPANY_INFO.phone}
+                  </a>
+                  <span className="text-[11px] text-emerald-400">WhatsApp & Direct Calls</span>
+                </div>
+              </li>
+
+              <li className="flex items-start gap-3">
+                <div className="p-2 rounded-lg bg-oryon-surface border border-oryon-border/30 text-oryon-cyan shrink-0 mt-0.5">
+                  <Mail className="w-4 h-4" />
+                </div>
+                <div>
+                  <span className="text-xs font-mono text-oryon-grey/60 uppercase block">Email</span>
+                  <a
+                    href="mailto:official@oryonglobal.com"
+                    className="text-sm font-semibold text-white hover:text-oryon-cyan transition-colors break-all block mt-0.5"
+                  >
+                    official@oryonglobal.com
+                  </a>
+                </div>
+              </li>
+
+              <li className="flex items-start gap-3">
+                <div className="p-2 rounded-lg bg-oryon-surface border border-oryon-border/30 text-oryon-cyan shrink-0 mt-0.5">
+                  <MapPin className="w-4 h-4" />
+                </div>
+                <div>
+                  <span className="text-xs font-mono text-oryon-grey/60 uppercase block">Address</span>
+                  <p className="text-sm text-oryon-grey/85 leading-relaxed mt-0.5">
+                    {COMPANY_INFO.address}
+                  </p>
+                </div>
+              </li>
             </ul>
           </div>
         </div>

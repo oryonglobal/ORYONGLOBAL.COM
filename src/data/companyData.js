@@ -9,7 +9,7 @@ export const COMPANY_INFO = {
   aboutHeading: "Technology Built Around Your Vision",
   aboutDescription:
     "At Oryon Global, we combine engineering expertise, thoughtful design, and modern technology to help businesses solve complex problems and build meaningful digital experiences.",
-  email: "hello.oryonglobal@gmail.com",
+  email: "official@oryonglobal.com",
   phone: "+91 96588 44199",
   whatsappNumber: "919658844199",
   address: "100 Technology Plaza, Innovation District, Suite 400",
@@ -297,7 +297,7 @@ export const LEADERSHIP_MEMBERS = [
     socials: {
       linkedin: "https://linkedin.com",
       twitter: "https://twitter.com",
-      email: "mailto:hello.oryonglobal@gmail.com",
+      email: "mailto:official@oryonglobal.com",
     },
   },
   {
@@ -318,7 +318,7 @@ export const LEADERSHIP_MEMBERS = [
     socials: {
       linkedin: "https://linkedin.com",
       github: "https://github.com",
-      email: "mailto:hello.oryonglobal@gmail.com",
+      email: "mailto:official@oryonglobal.com",
     },
   },
 ];

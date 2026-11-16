@@ -572,7 +572,7 @@ export default function SoftwareEcosystem({ onStartProject }) {
                     </a>
 
                     <a
-                      href={`mailto:hello.oryonglobal@gmail.com?subject=${encodeURIComponent(`Project Scope: ${submittedData.platform} - ${submittedData.client.name}`)}&body=${getWhatsAppMessage(submittedData)}`}
+                      href={`mailto:official@oryonglobal.com?subject=${encodeURIComponent(`Project Scope: ${submittedData.platform} - ${submittedData.client.name}`)}&body=${getWhatsAppMessage(submittedData)}`}
                       className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-oryon-surface hover:bg-oryon-deep text-white text-xs sm:text-sm font-semibold border border-white/20 transition-all"
                     >
                       <Mail className="w-4 h-4 text-oryon-cyan" />

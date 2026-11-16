@@ -727,10 +727,10 @@ export default function CareersPage({ onNavigateHome, onOpenContact }) {
                   <p className="text-[11px] text-oryon-grey/60 text-center mt-2.5">
                     Or email your resume directly to{' '}
                     <a
-                      href="mailto:hello.oryonglobal@gmail.com?subject=Engineering%20Career%20Application"
+                      href="mailto:official@oryonglobal.com?subject=Engineering%20Career%20Application"
                       className="text-oryon-cyan underline hover:text-cyan-300"
                     >
-                      hello.oryonglobal@gmail.com
+                      official@oryonglobal.com
                     </a>
                   </p>
                 </div>
